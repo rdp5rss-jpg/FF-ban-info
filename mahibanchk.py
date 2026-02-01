@@ -8,7 +8,8 @@ from telegram.ext import (
     filters
 )
 
-BOT_TOKEN = "8204753506:AAEf5mBSLkGJQ81grT0VfPRW-KpuVWnJcTw"
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # /start command
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
